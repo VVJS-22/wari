@@ -12,39 +12,47 @@ const routes = [
     {
         path:"/",
         component:Dashboard,
+        name:"Dashboard",
         exact:true
     },
     {
         path:"/dashboard",
         component:Dashboard,
+        name:"Dashboard",
         exact:true
     },
     {
         path:"/ledger",
         component:LedgerList,
+        name:'Ledger',
         exact:true
     },
     {
         path:"/ledger/create",
         component:AddCustomer,
+        name:'AddCustomer',
     },
     {
         path:"/ledger/list",
         component:LedgerList,
+        name:"LedgerList"
         
     },
     {
         path:'/ledger/add',
         component:LedgerAdd,
+        name:'LedgerAdd'
     },
     {
         path:"sales",
         component:SalesEntry,
+        name:'SalesEntry',
         exact:true    
     },
     {
         path:"/sales/saleslist",
         component:SalesEntry,
+        name:'SalesList'
     },
 
 ]
