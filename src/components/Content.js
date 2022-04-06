@@ -26,8 +26,6 @@ const Content = () => {
                     </div>
                 </div> */}
 
-                <AppBreadcrumb />
-
                 <Suspense fallback={<div>Loading</div>}>
                     <Switch>
                         {routes.map((route, idx) => {

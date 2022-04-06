@@ -1,8 +1,7 @@
 import React from 'react'
 import routes from '../routes'
 
-const AppBreadcrumb = () => {
-    const array = ['Dashboards','Dashboard']
+const AppBreadcrumb = ({breads}) => {
 
   return (
      <div className="row">
@@ -12,9 +11,11 @@ const AppBreadcrumb = () => {
                 <div className="page-title-right">
                     <ol className="breadcrumb m-0">
                         {
-                            array.map((item,index)=>(
-                                <li key={index} className="breadcrumb-item"><a href="/">{item}</a></li>
-                            )) 
+                            breads.map((item,index)=>( 
+                                <li key={index} className="breadcrumb-item">
+                                    <a href="/">{item.name}</a>
+                                </li>
+                            ))
                         }
                         {/* <li className="breadcrumb-item"><a href="/">Dashboards</a></li>
                         <li className="breadcrumb-item active">Dashboard</li> */}
